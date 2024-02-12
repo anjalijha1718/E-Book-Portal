@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#A5D8DD;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+        .top-bar {
+            background-color: #00008B;
+            padding: 10px 0;
+            text-align: right;
+            color: #fff;
+        }
+        .top-bar a {
+            margin: 0 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .top-bar a button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px; /* Oval shape */
+            background-color: #2980b9; /* Light blue color */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .top-bar a button:hover {
+            background-color: #87CEEB; /* Lighter shade of blue on hover */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .book {
+            width: 200px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        .book::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #f8b500, #f78a5f);
+            opacity: 0.7;
+            z-index: 1;
+        }
+        .book:hover {
+            transform: translateY(-5px);
+        }
+        .book img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .book-info {
+            padding: 10px;
+            text-align: left;
+            position: relative;
+            z-index: 2;
+        }
+        .book-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        .book-author {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .book-description {
+            font-size: 14px;
+            line-height: 1.4;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="home.html"><button>Home</button></a>
+        <a href="books.html"><button>Books</button></a>
+        <a href="question_papers.html"><button>Question Papers</button></a>
+        <a href="profile.html"><button>Profile</button></a>
+        <a href="feedback.html"><button>Feedback</button></a>
+    </div>
+    <div class="container">
+        <h1>Explore Our Books Collection</h1>
+        <div class="book-container">
+            <div class="book">
+                <img src="C:\Users\Anjali jha\Downloads\book.jpg" alt="Book Cover">
+                <div class="book-info">
+                    <div class="book-title">Book Title 1</div>
+                    <div class="book-author">Author Name 1</div>
+                    <div class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\Anjali jha\Downloads\book1.webp" alt="Book Cover">
+                <div class="book-info">
+                    <div class="book-title">Book Title 2</div>
+                    <div class="book-author">Author Name 2</div>
+                    <div class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="https://drive.google.com/uc?id=17JHOBd4r0EOs3qxTAveGsh_rMZDjdPp9" alt="Book Cover">
+                <div class="book-info">
+                    <div class="book-title">Book Title 3</div>
+                    <div class="book-author">Author Name 3</div>
+                    <div class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</div>
+                </div>
+            </div>
+            <!-- Add more books as needed -->
+        </div>
+    </div>
+</body>
+</html>
